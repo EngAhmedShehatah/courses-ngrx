@@ -4,6 +4,7 @@ import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/store/reducers';
 import { Course } from '../../model/course.model';
 import { courseActionTypes } from '../../store/course.actions';
+import * as uuid from 'uuid';
 
 @Component({
   selector: 'app-create-course',
@@ -25,7 +26,7 @@ export class CreateCourseComponent implements OnInit {
     }
 
     const course: Course = {
-      id: '0',
+      id: uuid.v4(),
       name: submittedForm.value.name,
       description: submittedForm.value.description
     };
