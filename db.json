@@ -1,0 +1,14 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "description": "A full tutorial to learn Angular framework from zero to hero"
+    },
+    {
+      "id": "0",
+      "name": "React.js",
+      "description": "Full tutorial to learn React.js from zero to hero"
+    }
+  ]
+}
